@@ -1,0 +1,30 @@
+{
+  "name": "astrographer",
+  "version": "0.1.0",
+  "description": "Website to display the nearest stars to Earth in an aesthetically pleasing, code-elegant format. Also an excuse to learn MERN and to demonstrate my skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdkolassa/astrographer.git"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "mongodb",
+    "astronomy",
+    "fun"
+  ],
+  "author": "Jeremy D. Kolassa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdkolassa/astrographer/issues"
+  },
+  "homepage": "https://github.com/jdkolassa/astrographer#readme",
+  "devDependencies": {
+    "concurrently": "^7.2.1"
+  }
+}

@@ -1,0 +1,54 @@
+// Import "Lato" font, our main workhorse
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+/* Variables */
+
+// Fonts
+$defont: 'Lato', sans-serif;
+
+// Colors (Other than spectral types)
+$black: #010101; // "Vortex Black", sounds amazing
+$white: #ECEBF3; // "Ghost White",
+$green: #009698; // "Viridian Green"
+$pink: #E03CB4; // Taken from an image of a nebula
+$purple: #5943C7; // Take from same picture
+
+/* Base Styles */
+
+// Typography
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: $black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $white;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 11.089rem;
+}
+
+h2 {font-size: 6.854rem;}
+
+h3 {font-size: 4.236rem;}
+
+h4 {font-size: 2.618rem;}
+
+h5 {font-size: 1.618rem;}
+
+small, .small, .caption {font-size: 0.618rem;}
+
+.tiny {font-size: 0.382rem;}

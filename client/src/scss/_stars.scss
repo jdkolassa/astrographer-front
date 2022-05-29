@@ -1,0 +1,57 @@
+// Bring in the base partial
+
+@use '_base';
+
+// Right now this file is mostly just comments because I'm trying to figure out how I want to manage the spectral types and display, so references here are important
+
+// Colors (for spectral types)
+// Hexadecimal codes mostly from Vendian.org by Mitchell Charity (http://www.vendian.org/mncharity/dir3/starcolor/)
+
+/* OBAFGKM standards (5V) */
+/**
+
+O = #9BB0FF 
+B = #AABFFF;
+A = #CAD7FF;
+F = #F8F7FF;
+G = #FFF4EA;
+K = #FFD2A1;
+M = #FFCC6F;
+
+*/
+
+/**
+Some famous stars...
+
+Achernar (B3V) #a5b9ff
+Acrux (B0IV) #9cb2ff (as B0V)
+Adhara (B2II) #a5c0ff
+Aldebaran (K5III) #ffcc8a
+Alnilam (B0I) #a1bdff
+Alpha Centauri A (G2V) #fff5f2
+Alpha Centauri B (K1V) #ffe0bc
+Altair (A7V) #c8d5ff
+Antares (M1I) #ffca8a
+Arcturus (K1III) #ffdfb5
+Bellatrix (B2III) #9fb4ff
+Beta Centauri Hadar (B1III) #9eb1ff
+Beta Crucis (B0III) #9eb1ff
+Betelgeuse (M1I) #ffca8a
+Canopus (F0II) #cbd9ff
+Capella (G5III) #ffecd3
+Deneb (A2I) #c7d6ff
+Elnath (B7III) #abbfff
+Fomalhaut (A3V) #bfcfff
+Gacrux (M3III) #ffc877
+Miaplacidus (A2IV) #bbcbff (as A2V)
+Pollux (K0III) #ffe3be
+Procyon (F5IV) #f1efff
+Regulus (B7V) #adbfff
+Rigel (B8I) #b6ceff
+Shaula (B2IV) #9fb3ff
+Sirius (A1V) #b5c7ff
+Spica (B1III) #9eb1ff
+Sun (G2V) #fff5f2
+Vega (A0V) #b9c9ff
+
+*/

@@ -1,13 +1,19 @@
 import React from 'react';
 import { CCard, CCardBody, CCardSubtitle, CCardTitle, CListGroup, CListGroupItem } from '@coreui/react';
 
-import { LuminosityClasses, SpectralClasses, Star as StarProps } from '../models/Star';
-import Graph from './Graph';
+import { LuminosityClasses, SpectralClasses, IStar } from '../models/IStar';
 
 
-const Star = (props: StarProps) => {
+const Star = (props: IStar) => {
 
     const {name, HIP, distance, hue, subclass, luminosity} = props;
+
+    function assembleColorCode(hue: SpectralClasses, subclass: number) {
+      // Trying to calculate with "5.5" classes is going to be hella-annoying
+      // So let's make sure we only use the subclass BEFORE the decimal
+      let subClean = String(subclass.toFixed(0));
+      return hue.concat(subClean);
+    }
 
     function assembleSpect(hue: SpectralClasses, subclass: number, luminosity: LuminosityClasses) {
         // First cast the values to strings
@@ -19,6 +25,7 @@ const Star = (props: StarProps) => {
     }
 
     const Spect = assembleSpect(hue, subclass, luminosity);
+    const ColorCode = assembleColorCode(hue, subclass);
 
     const nameDisplay = () => {
       if(name === undefined && HIP !== undefined) {
@@ -37,10 +44,13 @@ const Star = (props: StarProps) => {
 
     // TODO: Figure out how to turn the spectral class into an actual color for the card border
 
+
   return (
     <CCard className="starCard" id={name}>
         <CCardBody className={`drawBox ${hue} ${subclass} ${luminosity}`}>
-          <Graph hue={hue} luminosity={luminosity}/>
+          <div className={`star ${ColorCode}`}>
+
+          </div>
         </CCardBody>
         <CCardBody>
           {nameDisplay()}

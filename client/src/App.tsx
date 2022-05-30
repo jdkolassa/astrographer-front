@@ -1,4 +1,7 @@
 import React from 'react';
+import { Routes, Route, Link, Outlet } from 'react-router-dom';
+import About from './About';
+import Grid from './components/Grid';
 
 const App = () => {
   return (
@@ -6,13 +9,18 @@ const App = () => {
         <header>
             <h1 id="siteTitle">Astrographer</h1>
             <nav id="navigator" className="flexspread">
-              <span>Home</span>
-              <span>About</span>
+              <span><Link to="/">Home</Link></span>
+              <span><Link to="/about">About</Link></span>
             </nav>
         </header>
         <main id="mainBody">
-          {/* TODO: Set up React Router */}
+          {/* DONE: Set up React Router */}
+          <Routes>
+            <Route path="/" element={<Grid />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
         </main>
+        <Outlet/>
     </div>
   )
 }

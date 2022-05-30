@@ -1,0 +1,230 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "better-comments.tags": [
+        {
+            "tag": "bug",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "hack",
+            "color": "#7FFF00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "fixme",
+            "color": "#FF7900",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#EED202",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "done", 
+            "color": "#006400",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+
+        },
+        {
+            "tag": "review",
+            "color": "#00FFFF",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "note",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "[ ]",
+            "color": "#FF0090",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "[x]",
+            "color": "#5B3256",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "better-comments.multilineComments": true,
+    "todo-tree.highlights.customHighlight": {
+        "BUG": {
+            "icon": "bug",
+            "iconColour": "#FF2D00",
+            "foreground": "#FF2D00",
+            "background": "#010101",
+        },
+        "HACK": {
+            "icon": "tools",
+            "iconColour": "#7FFF00",
+            "foreground": "#7FFF00",
+            "background": "#010101",
+        },
+        "FIXME": {
+            "icon": "flame",
+            "iconColour": "#FF7900",
+            "foreground": "#FF7900",
+            "background": "#010101",
+        },
+        "TODO": {
+            "icon": "check-circle",
+            "iconColour": "#EED202",
+            "foreground": "#EED202",
+            "background": "#010101",
+        },
+        "DONE": {
+            "icon": "check-circle-fill",
+            "iconColour": "#006400",
+            "foreground": "#006400",
+            "background": "#010101",
+        },
+        "?": {
+            "icon": "question",
+            "iconColour": "#3498DB",
+            "foreground": "#3498DB",
+            "background": "#010101",
+        },
+        "!": {
+            "icon": "alert",
+            "iconColour": "#C40234",
+            "foreground": "#C40234",
+            "background": "#010101",
+        },
+        "REVIEW": {
+            "icon": "telescope",
+            "iconColour": "#00FFFF",
+            "foreground": "#00FFFF",
+            "background": "#010101",
+        },
+        "NOTE": {
+            "icon": "info",
+            "iconColour": "#98C379",
+            "foreground": "#98C379",
+            "background": "#010101",
+        },
+        "[ ]": {
+            "icon": "horizontal-rule",
+            "iconColour": "#FF0090",
+            "foreground": "#FF0090",
+            "background": "#010101",
+        },
+        "[x]": {
+            "icon": "check",
+            "iconColour": "#5B3256",
+            "foreground": "#5B3256",
+            "background": "#010101",
+        }
+    },
+    "todo-tree.general.tags": [
+        "BUG",
+        "!",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "DONE",
+        "?",
+        "REVIEW",
+        "NOTE",
+        "[ ]",
+        "[x]",
+    ],
+    "todo-tree.highlights.backgroundColourScheme": [
+        "#FF2D00",
+        "#FF2D00",
+        "#7FFF00",
+        "#FF7900",
+        "#EED202",
+        "#006400",
+        "#3498DB",
+        "#00FFFF",
+        "#98C379",
+        "#FF0090",
+        "#5B3256"
+    ],
+    "todo-tree.highlights.foregroundColourScheme": [
+        "white",
+        "black",
+        "black",
+        "orange",
+        "#F1E9D2",
+        "white",
+        "black"
+    ],
+    "todo-tree.highlights.enabled": true,
+    "todo-tree.tree.tooltipFormat": "line ${line} ## ${filepath}",
+}

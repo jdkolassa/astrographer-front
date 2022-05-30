@@ -3,6 +3,9 @@
         "mongodb.mongodb-vscode",
         "waderyan.nodejs-extension-pack",
         "dsznajder.es7-react-js-snippets",
-        "GrapeCity.gc-excelviewer"
+        "grapecity.gc-excelviewer",
+        "gruntfuggly.todo-tree",
+        "aaron-bond.better-comments",
+        "mikestead.dotenv"
     ]
 }

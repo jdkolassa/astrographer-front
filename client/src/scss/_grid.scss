@@ -1,0 +1,24 @@
+// Will need to import colors from the stars file for the filter menu
+@use './stars';
+
+.GridWrapper {
+    display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+// Filter Menu
+
+.filterList {
+    list-style-type: none;
+}
+
+.filterItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 0.75rem 0; 
+}

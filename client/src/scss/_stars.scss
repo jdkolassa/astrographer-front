@@ -10,15 +10,27 @@
 /* OBAFGKM standards (5V) */
 /**
 
-O = #9BB0FF 
-B = #AABFFF;
-A = #CAD7FF;
-F = #F8F7FF;
-G = #FFF4EA;
-K = #FFD2A1;
-M = #FFCC6F;
+.O = #9BB0FF 
+.B = #AABFFF;
+.A = #CAD7FF;
+.F = #F8F7FF;
+.G = #FFF4EA;
+.K = #FFD2A1;
+.M = #FFCC6F;
 
 */
+
+.filterList {
+    .filterItem.O { color: base.$baseO; }
+    .filterItem.B { color: base.$baseB; }
+    .filterItem.A { color: base.$baseA; }
+    .filterItem.F { color: base.$baseF; }
+    .filterItem.G { color: base.$baseG; }
+    .filterItem.K { color: base.$baseK; }
+    .filterItem.M { color: base.$baseM; }
+}
+
+// Todo: Read the rest of Vendian and calculate color codes for every star type
 
 /**
 Some famous stars...
@@ -55,3 +67,62 @@ Sun (G2V) #fff5f2
 Vega (A0V) #b9c9ff
 
 */
+
+// Useful mixins
+
+@mixin luminosity($size) {
+    height: $size * base.$baseSize;
+    width: $size * base.$baseSize;
+}
+
+@mixin glow($color) {
+    $lighter: color.scale($color, $lightness: 20%, $saturation: -20%);
+    $darker: color.scale($color, $lightness: -20%, $saturation: 20%);
+    background-color: radial-gradient($darker, $color, $lighter);
+}
+
+// Basic classes
+
+.star {
+    border-radius: 100%;
+}
+
+// Luminosity classes
+
+.hyper {
+    @include luminosity(4);
+}
+
+.supergiant {
+    @include luminosity(3);
+}
+
+.bright {
+    @include luminosity(2.5);
+}
+
+.giant {
+    @include luminosity(2);
+}
+
+.subgiant {
+    @include luminosity(1.5);
+}
+
+.dwarf {
+    @include luminosity(1);
+}
+
+// Because main-sequence M-type stars are really small
+.dwarf.M {
+    @include luminosity(0.25);
+}
+
+.subdwarf {
+    @include luminosity(0.5);
+}
+
+.compact {
+    @include luminosity(0.25);
+}
+

@@ -13,6 +13,20 @@ $green: #009698; // "Viridian Green"
 $pink: #E03CB4; // Taken from an image of a nebula
 $purple: #5943C7; // Take from same picture
 
+// Base size for stars
+$baseSize: 2rem;
+
+// Base colors for stars
+
+$baseO: #9BB0FF;
+$baseB: #AABFFF;
+$baseA: #CAD7FF;
+$baseF: #F8F7FF;
+$baseG: #FFF4EA;
+$baseK: #FFD2A1;
+$baseM: #FFCC6F;
+
+
 /* Base Styles */
 
 // Typography
@@ -52,3 +66,12 @@ h5 {font-size: 1.618rem;}
 small, .small, .caption {font-size: 0.618rem;}
 
 .tiny {font-size: 0.382rem;}
+
+// Utility classes
+
+.flexspread {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.75rem;
+}

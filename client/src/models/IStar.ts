@@ -1,8 +1,9 @@
-export interface Star {
+export interface IStar {
+    _id: string,
     name?: string,
     HIP?: number,
     distance: number,
-    hue: SpectralClasses,
+    hue: SpectralClasses, // * must be a capital letter
     subclass: number,
     luminosity: LuminosityClasses,
 }
@@ -45,5 +46,5 @@ export enum LuminosityClasses {
 export interface Multiple {
     name: string,
     distance: number,
-    members: Star[],
+    members: IStar[],
 }

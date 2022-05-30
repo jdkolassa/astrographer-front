@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "mongodb.mongodb-vscode",
+        "waderyan.nodejs-extension-pack",
+        "dsznajder.es7-react-js-snippets",
+        "GrapeCity.gc-excelviewer"
+    ]
+}

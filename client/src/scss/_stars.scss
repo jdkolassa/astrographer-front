@@ -85,11 +85,111 @@ Vega (A0V) #b9c9ff
 
 .star {
     border-radius: 100%;
+    margin: 0.25rem;
 }
+
+.O5 {@include glow(#9db4ff)}
+.O6 {@include glow(#9db4ff)}
+.O7 {@include glow(#9DB3FF)}
+.O8 {@include glow(#9DB3FF)}
+.O9 {@include glow(#9cb2ff)}
+.B0 {@include glow(#9cb2ff)}
+.B1 {@include glow(#A1B9FF)}
+.B2 {@include glow(#a5c0ff)}
+.B3 {@include glow(#a7bcff)}
+.B4 {@include glow(#A9BEFF)}
+.B5 {@include glow(#aabfff)}
+.B6 {@include glow(#ACC0FF)}
+.B7 {@include glow(#ADC2FF)}
+.B8 {@include glow(#afc3ff)}
+.B9 {@include glow(#B4C6FF)}
+.A0 {@include glow(#b9c9ff)}
+.A1 {@include glow(#baccff)}
+.A2 {@include glow(#BDCFFF)}
+.A3 {@include glow(#c0d1ff)}
+.A4 {@include glow(#C5D5FF)}
+.A5 {@include glow(#cad8ff)}
+.A6 {@include glow(#C9D7FF)}
+.A7 {@include glow(#c8d5ff)}
+.A8 {@include glow(#D1DBFF)}
+.A9 {@include glow(#DBE2FF)}
+.F0 {@include glow(#e4e8ff)}
+.F1 {@include glow(#E9EBFF)}
+.F2 {@include glow(#edeeff)}
+.F3 {@include glow(#F2F1FF)}
+.F4 {@include glow(#F6F5FF)}
+.F5 {@include glow(#fbf8ff)}
+.F6 {@include glow(#FCF8FD)}
+.F7 {@include glow(#FEF9FB)}
+.F8 {@include glow(#fff9f9)}
+.F9 {@include glow(#FFF8F6)}
+.G0 {@include glow(#FFF7F3)}
+.G1 {@include glow(#FFF6EF)}
+.G2 {@include glow(#fff5ec)}
+.G3 {@include glow(#FFF5EB)}
+.G4 {@include glow(#FFF4E9)}
+.G5 {@include glow(#fff4e8)}
+.G6 {@include glow(#FFF3E5)}
+.G7 {@include glow(#FFF2E2)}
+.G8 {@include glow(#fff1df)}
+.G9 {@include glow(#FFF0DE)}
+.K0 {@include glow(#ffeedd)}
+.K1 {@include glow(#ffebd1)}
+.K2 {@include glow(#ffe3c4)}
+.K3 {@include glow(#FFDDB9)}
+.K4 {@include glow(#ffd7ae)}
+.K5 {@include glow(#FFD1A4)}
+.K6 {@include glow(#FFCC9A)}
+.K7 {@include glow(#ffc690)}
+.K8 {@include glow(#FFC890)}
+.K9 {@include glow(#FFC98F)}
+.M0 {@include glow(#FFCB8F)}
+.M1 {@include glow(#ffcc8e)}
+.M2 {@include glow(#ffbe7f)} // rgb(255,190,127)
+.M3 {@include glow(#ffce81)}
+.M4 {@include glow(#ffbb7b)} // rgb(255,187,123)
+.M5 {@include glow(#ffcc6f)} // rgb(255,204,111)
+.M6 {@include glow(#ffc370)} // rgb(255,195,112)
+
+// White Dwarf colors
+// * White dwarfs are not exactly white
+
+.D0 {@include glow(#9bb2ff)}
+.D1 {@include glow(#9fb5ff)}
+.D2 {@include glow(#a8bdff)}
+.D3 {@include glow(#b3c5ff)}
+.D4 {@include glow(#c0cfff)}
+.D5 {@include glow(#cfdaff)}
+.D6 {@include glow(#e0e6ff)}
+.D7 {@include glow(#f3f3ff)}
+.D8 {@include glow(#fff7f5)}
+.D9 {@include glow(#ffefe1)}
+
+// Specifically named stars
+// These should supersede the general classes
+
+#sol {
+    @include glow(#fff5f2)
+}
+
+#alphacentauriA {@include glow(#fff5f2)}
+#alphacentauriB {@include glow(#ffeedd)}
+#proxima {@include glow(#ffcc6f)}
+#barnard {@include glow(#ffc97f)}
+#wolf359 {@include glow(#ffc370)}
+#lalande21185 {@include glow(#ffc483)} //M2
+#siriusA {@include glow(#b5c7ff)} //A1
+#siriusB {@include glow(#a8bdff)} //D2
+#UVCetiA {@include glow(#ffcc6f)} //M5
+#UVCetiB {@include glow(#ffc370)} //M6
+#Ross154 {@include glow(#ffce81)} //M3
+#Ross248 {@include glow(#ffcc6f)} //M5
+#eridani {@include glow(#ffe3c4)} // K2
+#EZAquarii {@include glow(#ffcc6f)} //M5
 
 // Luminosity classes
 
-.hyper {
+.hypergiant {
     @include luminosity(4);
 }
 

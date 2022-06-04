@@ -1,0 +1,24 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+const database = 'astrographer';
+const collection = 'stars';
+
+// Create a new database.
+use(database);
+
+db.collection.insertMany([
+  { "_id": 1, "name": "Sol", "otherNames": ["Sun", "Al-Lat", "Helios", "Amaterasu"], "distance": 0.00, "spectralType": "G2V", "isMultiple": false},
+  { "_id": 2, "name": "Alpha Centauri", "distance": 4.37, "isMultiple": true, "members": [
+    { "_id": "2a", "name": "Rigil Kentaurus", "otherNames": ["Alpha Centauri A", "رجل القنطورس"], "spectralType": "G2V" },
+    { "_id": "2b", "name": "Toliman", "otherNames": ["Alpha Centauri B", "الظليمان"], "spectralType": "K1V"},
+    {"_id": "2c", "name": "Proxima", "distance": 4.3, "spectralType": "M5.5V", "isMultiple": false},
+  ]},
+  { "_id": 3, "name": "Barnard's Star", "otherNames": ["Greyhound of the Skies", "Velox Barnardi"], "distance": 5.96, "spectralType": "M4V", "isMultiple": false },
+  { "_id": 4, "name": "Luhman 16", "distance": 6.5, "isMultiple": true, "members": [
+    {"_id": "004a", "name": "Luhman 16A", "spectralType": "L8", "isBrownDwarf": true},
+    {"_id": "004b", "name": "Luhman 16B", "spectralType": "T1", "isBrownDwarf": true}
+  ]},
+  { "_id": 5, "name": "WISE-0855-0714", "distance": 7.43, "spectralType": "Y4", "isBrownDwarf": false, "isSubBrownDwarf": true},
+  { "_id": 6, "name": "Wolf 359", "otherNames": ["CN Leonis"], "distance": 7.86, "spectralType": "M6V", "isMultiple": false}
+])

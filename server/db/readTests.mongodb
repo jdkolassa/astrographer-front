@@ -1,0 +1,5 @@
+
+
+use('astrographer');
+
+db.stars.find({ isBrownDwarf: true});

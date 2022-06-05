@@ -2,12 +2,13 @@
 // Use Ctrl+Space inside a snippet or a string literal to trigger completions.
 
 const database = 'astrographer';
-const collection = 'stars';
 
 // Create a new database.
 use(database);
 
-db.collection.insertMany([
+db.collection.drop();
+
+db.stars.insertMany([
   { "_id": 1, "name": "Sol", "otherNames": ["Sun", "Al-Lat", "Helios", "Amaterasu"], "distance": 0.00, "spectralType": "G2V", "isMultiple": false},
   { "_id": 2, "name": "Alpha Centauri", "distance": 4.37, "isMultiple": true, "members": [
     { "_id": "2a", "name": "Rigil Kentaurus", "otherNames": ["Alpha Centauri A", "رجل القنطورس"], "spectralType": "G2V" },
@@ -21,4 +22,4 @@ db.collection.insertMany([
   ]},
   { "_id": 5, "name": "WISE-0855-0714", "distance": 7.43, "spectralType": "Y4", "isBrownDwarf": false, "isSubBrownDwarf": true},
   { "_id": 6, "name": "Wolf 359", "otherNames": ["CN Leonis"], "distance": 7.86, "spectralType": "M6V", "isMultiple": false}
-])
+]);

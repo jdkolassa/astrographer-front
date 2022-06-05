@@ -30,7 +30,7 @@
     .filterItem.M { color: base.$baseM; }
 }
 
-// Todo: Read the rest of Vendian and calculate color codes for every star type
+// TODO: Read the rest of Vendian and calculate color codes for every star type
 
 /**
 Some famous stars...
@@ -70,10 +70,14 @@ Vega (A0V) #b9c9ff
 
 // Useful mixins
 
+// * This mixin will help resize the stars based on their luminosity class (roughly) so that giants appear larger than dwarfs
+
 @mixin luminosity($size) {
     height: $size * base.$baseSize;
     width: $size * base.$baseSize;
 }
+
+// * We don't want the stars to be just a flat, matte color, so we'll use a radial gradient instead to make it look good; a SCSS mixin makes that much easier to apply 
 
 @mixin glow($color) {
     $lighter: color.scale($color, $lightness: 20%, $saturation: -20%);

@@ -14,7 +14,7 @@ const App = () => {
             </nav>
         </header>
         <main id="mainBody">
-          {/* DONE: Set up React Router */}
+          {/* //? Is this the way to set up React Router? */}
           <Routes>
             <Route path="/" element={<Grid />} />
             <Route path="/about" element={<About />} />
